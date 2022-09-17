@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![layout-project-compass-logon](https://user-images.githubusercontent.com/106191555/190878217-41ff650b-1e42-4e2f-b5ed-c2d30964841b.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
