@@ -1,0 +1,19 @@
+.error-401 {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  h3 {
+    margin: 0 20px;
+  }
+  .error-gif {
+    @media (max-width: 580px) {
+      width: 95%;
+    }
+  }
+}

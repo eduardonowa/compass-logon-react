@@ -1,0 +1,68 @@
+main {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  height: 80vh;
+  .left-main {
+    #ball {
+      position: absolute;
+      bottom: 0vh;
+      left: -5vh;
+      width: 500px;
+      @media (max-width: 910px) {
+        width: 420px;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+      @media (max-height: 560px) {
+        display: none;
+      }
+    }
+    #slashed-ball {
+      display: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media (max-width: 768px) {
+        display: block;
+        width: 70%;
+      }
+      @media (max-width: 550px) {
+        display: block;
+        width: 90%;
+      }
+    }
+  }
+  .right-main {
+    padding-top: 50px;
+    text-align: right;
+    width: 60%;
+    @media (max-height: 570px) {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    #title-small {
+      @media (max-width: 910px) {
+        font-size: 1.5em !important;
+      }
+      @media (max-height: 850px) {
+        font-size: 1.5em !important;
+      }
+    }
+    #title-big {
+      @media (max-width: 1110px) {
+        font-size: 2.5em !important;
+      }
+      @media (max-width: 910px) {
+        font-size: 2em !important;
+      }
+      @media (max-height: 850px) {
+        font-size: 2em !important;
+      }
+    }
+  }
+}

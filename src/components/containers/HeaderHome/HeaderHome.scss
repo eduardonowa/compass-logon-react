@@ -1,0 +1,22 @@
+header {
+  height: 15vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (max-width: 370px) {
+    height: 22vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .logo-container {
+    #compass-black {
+      width: 250px;
+      @media (max-width: 470px) {
+        width: 200px;
+      }
+    }
+  }
+}

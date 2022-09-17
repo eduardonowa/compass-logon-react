@@ -1,0 +1,22 @@
+.error-404 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+
+  .error-gif {
+    @media (max-width: 580px) {
+      width: 99%;
+    }
+  }
+  #not-found {
+    display: block;
+    width: 100%;
+    color: #00240b;
+    text-align: center;
+    margin: 0;
+  }
+}
