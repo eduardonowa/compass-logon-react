@@ -8,6 +8,7 @@ const Titles = (props) => {
       id={props.id}
       style={{ fontSize: props.fontSize + "em" }}
       className="title-component"
+      data-testid="title-component"
     >
       {props.text}
     </p>

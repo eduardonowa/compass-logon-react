@@ -15,7 +15,6 @@ const Login = (props) => {
 
   function handleChange(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
-    console.log(form);
   }
 
   const navigate = useNavigate();
@@ -34,12 +33,17 @@ const Login = (props) => {
   }
 
   useEffect(() => {
-    document.title = "Compass.UOL | Login"
-  },[])
+    document.title = "Compass.UOL | Login";
+  }, []);
   return (
     <div className="login">
       <div className="left-login">
-        <img src={Logo} alt="compass logo" id="compass-logo-left" />
+        <img
+          src={Logo}
+          alt="compass logo"
+          id="compass-logo-left"
+          data-testid="left-logo"
+        />
         <Welcome />
         <h2>Login</h2>
         <Inputs
@@ -56,18 +60,27 @@ const Login = (props) => {
             className="pw-input"
             onChange={handleChange}
             id="password"
+            data-testid="password-input"
           />
           <i
             onClick={togglePassword}
-            class="far fa-eye"
+            className="far fa-eye"
             id="togglePassword"
+            data-testid="icon-password"
           ></i>
         </div>
-        <span id="form-error">{props.spanText}</span>
+        <span id="form-error" data-testid="error-text">
+          {props.spanText}
+        </span>
         <Button onClick={handleClick} />
       </div>
       <div className="right-login">
-        <img src={Logo} alt="compass logo" id="compass-logo-right" />
+        <img
+          src={Logo}
+          alt="compass logo"
+          id="compass-logo-right"
+          data-testid="right-logo"
+        />
       </div>
     </div>
   );

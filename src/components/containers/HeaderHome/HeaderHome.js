@@ -7,9 +7,9 @@ import Weather from "../../../components/Weather/Weather";
 
 const HeaderHome = () => {
   return (
-    <header>
+    <header data-testid="headerHome-component">
       <div className="logo-container">
-        <img src={Logo} alt="logo compass black" id="compass-black" />
+        <img src={Logo} alt="logo compass black" id="compass-black" data-testid="header-logo"/>
       </div>
       <Clock />
       <Weather />

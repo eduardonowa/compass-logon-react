@@ -8,10 +8,10 @@ import SlashBall from "../../../images/uol-ball-slash.png";
 
 const MainHome = () => {
   return (
-    <main>
+    <main data-testid="mainHome-component">
       <div className="left-main">
-        <img src={Ball} alt="compass ball" id="ball" />
-        <img src={SlashBall} alt="compass slashed ball" id="slashed-ball" />
+        <img src={Ball} alt="compass ball" id="ball"/>
+        <img src={SlashBall} alt="compass slashed ball" id="slashed-ball"  />
       </div>
       <div className="right-main">
         <Titles text="Our mission is" fontSize={2} id="title-small" />

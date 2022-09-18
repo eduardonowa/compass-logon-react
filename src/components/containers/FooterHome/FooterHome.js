@@ -33,24 +33,24 @@ const FooterHome = () => {
 
   return (
     <footer>
-      <div className="info-text">
-        <p>
+      <div className="info-text" data-testid="footerHome-component">
+        <p data-testid="info-text">
           Essa janela do navegador é usada para manter sua sessão de
           autenticação ativa. <br /> Deixe-a aberta em segundo plano e abra uma
           nova janela para continuar a navegar.
         </p>
       </div>
       <div className="refresh-text">
-        <p>
+        <p data-testid="refresh-text">
           Application <br />
           refresh in
         </p>
       </div>
       <Timer timer={timer} />
-      <button className="keep-nav" onClick={handleNavClick}>
+      <button className="keep-nav" onClick={handleNavClick} data-testid="keep-nav-button">
         Continuar Navegando
       </button>
-      <button className="logout" onClick={handleLogout}>
+      <button className="logout" onClick={handleLogout} data-testid="logout-button">
         Logout
       </button>
     </footer>
