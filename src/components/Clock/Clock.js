@@ -56,7 +56,7 @@ const Clock = () => {
   return (
     <div className="clock-container">
       {!isLoading && (
-        <div>
+        <div data-testid="clock-date">
           <p id="hour">
             {hours > 9 ? hours : `0${hours}`}:
             {minutes > 9 ? minutes : `0${minutes}`}

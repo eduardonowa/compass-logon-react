@@ -8,11 +8,12 @@ import FooterHome from "../../components/containers/FooterHome/FooterHome";
 
 const Home = () => {
   const navigate = useNavigate();
+
   useEffect(() => {
     if (!localStorage.getItem("isLogged")) {
       navigate("/error-401");
     }
-    document.title = "Compass.UOL | Home"
+    document.title = "Compass.UOL | Home";
     // eslint-disable-next-line
   }, []);
 

@@ -9,7 +9,7 @@ const Error404 = () => {
   return (
     <div className="error-404">
       <img src={Error404Gif} alt="Erro 404 Gif" className="error-gif" />
-      <h2 id="not-found">Página não encontrada</h2>
+      <h2 data-testid="notfound-text" id="not-found">Página não encontrada</h2>
     </div>
   );
 };

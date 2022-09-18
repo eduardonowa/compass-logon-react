@@ -29,7 +29,6 @@ const Weather = () => {
         )
           .then((response) => response.json())
           .then((data) => {
-            console.log(data.current.condition.text);
             let temp = data.current.temp_c.toFixed(0);
             setTemp(temp);
             getWeatherIcon(data.current.condition.text);
@@ -66,17 +65,19 @@ const Weather = () => {
   useEffect(() => {}, [imgSrc]);
 
   return (
-    <div className="weather-container">
+    <div className="weather-container" data-testid="clock-component">
       {!isLoading && (
         <div>
-          <p className="city-state">
+          <p className="city-state" data-testid="city-region">
             {city} - {region}
           </p>
           <div className="condition">
             <div className="image">
-              <img src={imgSrc} alt="" />
+              <img src={imgSrc} alt="" data-testid="weather-img" />
             </div>
-            <p className="temperature">{temp}°</p>
+            <p className="temperature" data-testid="temperature">
+              {temp}°
+            </p>
           </div>
         </div>
       )}

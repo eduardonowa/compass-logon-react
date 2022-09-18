@@ -21,7 +21,9 @@ const Error401 = () => {
   return (
     <div className="error-401">
       <img src={ErrorGif} alt="gif erro 401" className="error-gif" />
-      <h3>Você será redirecionado em {timer} s...</h3>
+      <h3 data-testid="redirect-text">
+        Você será redirecionado em {timer} s...
+      </h3>
     </div>
   );
 };

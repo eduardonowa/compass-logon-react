@@ -3,9 +3,9 @@ import "./Timer.scss";
 
 const Timer = (props) => {
   return (
-    <div className="timer-container">
-      <p className="time">{props.timer}</p>
-      <p className="seconds">seconds</p>
+    <div className="timer-container" data-testid="timer-component">
+      <p className="time" data-testid="timer-text">{props.timer}</p>
+      <p className="seconds" data-testid="seconds-text">seconds</p>
     </div>
   );
 };
