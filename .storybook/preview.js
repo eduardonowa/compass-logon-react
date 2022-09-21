@@ -1,3 +1,4 @@
+import '../src/stories/Components/globalStorybook.scss'
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {

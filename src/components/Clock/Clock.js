@@ -50,6 +50,7 @@ const Clock = () => {
       setDayMonth(day);
       setYears(year);
       setIsLoading(false);
+      console.log(weekDay);
     }, 1000);
   }, []);
 
@@ -62,7 +63,7 @@ const Clock = () => {
             {minutes > 9 ? minutes : `0${minutes}`}
           </p>
           <p id="date">
-            {daysOfWeek[dayWeek]}, {dayMonth} de {monthsOfYear[months]} de{" "}
+            {daysOfWeek[dayWeek - 1]}, {dayMonth} de {monthsOfYear[months]} de{" "}
             {years}
           </p>
         </div>

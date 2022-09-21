@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.button-container {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(132.34deg, #ff2d04 22.57%, #c13216 72.04%);
+    transition: all ease 0.5s;
+    height: 3.5em;
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+    &:hover {
+      background: white;
+      color: #ff2d04;
+      border: 2px solid (132.34deg, #ff2d04 22.57%, #c13216 72.04%);
+    }
+  }
+}

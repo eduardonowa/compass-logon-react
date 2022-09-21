@@ -1,0 +1,8 @@
+.text-component {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #222222;
+  @media (max-width: 1110px) {
+    font-size: 1em;
+  }
+}

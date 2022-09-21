@@ -1,0 +1,36 @@
+.weather-container {
+  margin-right: 10px;
+  #loader-weather {
+    margin-left: -100px;
+    width: 100px;
+    height: 120px;
+    .cube {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .city-state {
+    font-size: 0.85em;
+    text-align: center;
+  }
+  .condition {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+    img {
+      margin-top: 10px;
+      width: 30px;
+      @media (max-width: 400px) {
+        width: 25px;
+      }
+    }
+    .temperature {
+      font-weight: 700;
+      font-size: 3em;
+      @media (max-width: 400px) {
+        width: 2.5em;
+      }
+    }
+  }
+}

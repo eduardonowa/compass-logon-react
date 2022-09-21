@@ -1,0 +1,23 @@
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  color: #222222;
+  #hour {
+    font-weight: 700;
+    font-size: 7em;
+    height: 1.25em;
+  }
+  #date {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.85em;
+  }
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
