@@ -9,7 +9,7 @@ const HeaderHome = () => {
   return (
     <header data-testid="headerHome-component">
       <div className="logo-container">
-        <img src={Logo} alt="logo compass black" id="compass-black" data-testid="header-logo"/>
+        <img src={Logo} alt="logo compass black" id="compass-black" data-testid="header-logo"  draggable="false"/>
       </div>
       <Clock />
       <Weather />

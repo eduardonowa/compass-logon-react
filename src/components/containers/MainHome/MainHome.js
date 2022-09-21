@@ -10,8 +10,8 @@ const MainHome = () => {
   return (
     <main data-testid="mainHome-component">
       <div className="left-main">
-        <img src={Ball} alt="compass ball" id="ball"/>
-        <img src={SlashBall} alt="compass slashed ball" id="slashed-ball"  />
+        <img src={Ball} alt="compass ball" id="ball"  draggable="false"/>
+        <img src={SlashBall} alt="compass slashed ball" id="slashed-ball"  draggable="false" />
       </div>
       <div className="right-main">
         <Titles text="Our mission is" fontSize={2} id="title-small" />

@@ -43,6 +43,7 @@ const Login = (props) => {
           alt="compass logo"
           id="compass-logo-left"
           data-testid="left-logo"
+          draggable="false"
         />
         <Welcome />
         <h2>Login</h2>
@@ -80,6 +81,7 @@ const Login = (props) => {
           alt="compass logo"
           id="compass-logo-right"
           data-testid="right-logo"
+          draggable="false"
         />
       </div>
     </div>
