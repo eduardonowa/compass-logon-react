@@ -65,7 +65,7 @@ const Weather = () => {
   useEffect(() => {}, [imgSrc]);
 
   return (
-    <div className="weather-container" data-testid="clock-component">
+    <div className="weather-container" data-testid="weather-component">
       {!isLoading && (
         <div>
           <p className="city-state" data-testid="city-region">
